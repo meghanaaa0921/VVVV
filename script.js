@@ -4,12 +4,10 @@ const gif = qs(".gif");
 const [yesBtn, noBtn] = [".yes-btn", ".no-btn"].map(qs);
 
 const handleYesClick = () => {
-  question.innerHTML = "Hoiii babes,Okappudu ee valentines day lu ivanni mana valla ayye panlu kaadhu ani anukune danni, ippudu chudu coding raakapoina edo chatgpt vaadi chinni website neekosam.Idedo pedda website ani kaadhu,jus a small way to express my love for you baby<3 
-Just okati gurthupetko naana,nak pedda pedda korikalem lev, 
-YOU’RE MY FIRST LOVE AND I HOPE YOU TO BE MY LAST. ANTHE. 
-Nuvvunte chaalu. And nen unta neeku. ALWAYS. Nuvvepppudu low feel aina nenoka danni unna ani gurthupetko. You are safe with me, just like how you make me feel<3
-Ekkuva kathal paddav anko,em cheyyanu, inkoncham premistha😭 
-If you’ll ever break my heart, I’ll kill you, I know you wont but still. 😭 I love you baby<3";
+  question.innerHTML = "Hoiii babes,Okappudu ee valentines day lu ivanni mana valla ayye panlu kaadhu ani anukune danni, ippudu chudu coding raakapoina,chatgpt venakapadi oka chinni website neekosam. Idedo pedda website ani kaadhu, its just a small way to express my love for you baby<3 
+Just okati gurthupetko naana, nak pedda pedda korikalem lev, YOU’RE MY FIRST LOVE AND I HOPE YOU TO BE MY LAST. ANTHE. 
+Nuvvunte chaalu. And nen unta neeku. ALWAYS. Nuvvepppudu low feel aina nenoka danni unna ani gurhupetko. You are safe with me, just like how you make me feel <3
+Ekkuva kathal paddav anko, em cheyyanu, inkoncham premistha😭 If you’ll ever break my heart, I’ll kill you, I know you wont but still. 😭 I love you baby<3 ";
   gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
 
   // Remove the 'mouseover' event listener from noBtn
@@ -126,8 +124,8 @@ If you’ll ever break my heart, I’ll kill you, I know you wont but still. �
 
   // Create and style a new button for Let's Go!
   const letsGoBtn = document.createElement("button");
-  letsGoBtn.textContent = "Letssss Go!";
-  letsGoBtn.classList.add("letssssgo-btn"); // You can add a class for styling if needed
+  letsGoBtn.textContent = "To Love🥂";
+  letsGoBtn.classList.add("letsgo-btn"); // You can add a class for styling if needed
   letsGoBtn.style.position = "absolute";
 
   // Adjust the left position based on screen width
@@ -145,8 +143,10 @@ If you’ll ever break my heart, I’ll kill you, I know you wont but still. �
     const randomIndex = Math.floor(Math.random() * dateIdeas.length);
     const selectedDateIdea = dateIdeas[randomIndex];
 
- 
-   // Replace yesBtn with the new letsGoBtn
+    alert(`How about this romantic date idea: ${selectedDateIdea}`);
+  });
+
+  // Replace yesBtn with the new letsGoBtn
   yesBtn.replaceWith(letsGoBtn);
 };
 
